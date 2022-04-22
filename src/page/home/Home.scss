@@ -1,0 +1,228 @@
+.container_HomePage {
+  width: 100%;
+  padding: 25px 0;
+  background: #333333;
+  .HomePageTop {
+    width: 100%;
+    height: 500px;
+    background: url("https://ecdn.game4v.com/g4v-content/uploads/2021/05/Spider-Man-No-Way-Home-1-game4v.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .HomePageTop_text {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      .HomePageTop_text_intro {
+        position: absolute;
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        h1 {
+          text-transform: uppercase;
+          font-weight: 700;
+        }
+        span {
+          color: red;
+        }
+        p {
+          text-align: center;
+          width: 500px;
+          color: #fff;
+        }
+        button {
+          cursor: pointer;
+          margin-top: 10px;
+          border-radius: 8px;
+          background-color: #3498db;
+          font-weight: 700;
+          padding: 12px 35px;
+          border: none;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          &:hover {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            background-color: #2980b9;
+          }
+        }
+      }
+    }
+  }
+
+  .bodyHomePage {
+    color: #fff;
+    width: 80%;
+    margin: 0px 10%;
+    .bodyHome_text {
+      width: 23%;
+      height: 50px;
+      border-left: 5px solid #e50914;
+      background: transparent
+      linear-gradient(
+        270deg,
+        rgba(11, 1, 2, 0) 0%,
+        rgba(255, 55, 65, 0.3) 100%
+      );
+      p {
+        float: left !important;
+        margin-left: 15px;
+        font-size: 30px;
+        transform: translateY(3px);
+        text-transform: capitalize;
+      }
+    }
+    .home_content_card {
+      margin-top: 15px;
+      width: 100%;
+      flex-wrap: wrap;
+      display: flex;
+    }
+  }
+
+  .pagination-movies-home {
+    margin-top: 15px;
+    width: 28%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+  }
+}
+
+.wrapper-video {
+  --color: #1f242d;
+  --color-invert: #ffffff;
+  --clip-path: circle(15px at left);
+  --clip-path-hover: circle(70px at left);
+  --clip-path-clicked: circle(100vw at left);
+  --duration: 0.4s;
+  --timing-function: ease;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+  .video {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    clip-path: var(--clip-path);
+    transition: clip-path var(--duration) var(--timing-function);
+    video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .text {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    opacity: var(--opacity, 1);
+    transition: opacity 0.3s var(--timing-function) 0.2s;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -1px;
+      right: 25px;
+      height: 0;
+    }
+    &::before {
+      box-shadow: 26px 0 0 1px var(--color);
+      right: var(--r, 100%);
+      opacity: var(--opacity, 0);
+      transition: right 0.5s ease-in, opacity 0.1s linear;
+    }
+    &::after {
+      box-shadow: 26px 0 0 1px var(--color-invert);
+      clip-path: var(--clip-path);
+      transition: clip-path var(--duration) var(--timing-function);
+    }
+    > span {
+      &::before,
+      &::after {
+        content: attr(data-text);
+        padding-left: 26px;
+      }
+      &::before {
+        color: var(--color);
+      }
+      &::after {
+        color: var(--color-invert);
+        clip-path: var(--clip-path);
+        transition: clip-path var(--duration) var(--timing-function);
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+  input {
+    width: 220px;
+    height: 40px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-radius: 40px;
+    outline: none;
+    z-index: 2;
+    appearance: none;
+    cursor: pointer;
+    &:focus {
+      outline: 0;
+    }
+    &:hover {
+      ~ .video {
+        clip-path: var(--clip-path-hover);
+      }
+      ~ .text {
+        &::before {
+          --r: 25px;
+          --opacity: 1;
+        }
+        &::after {
+          clip-path: var(--clip-path-hover);
+        }
+        > span {
+          &::after {
+            clip-path: var(--clip-path-hover);
+          }
+        }
+      }
+    }
+    &:checked {
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+      ~ .video {
+        clip-path: var(--clip-path-clicked);
+      }
+      ~ .text {
+        --opacity: 0;
+        transition: opacity 0.3s var(--timing-function);
+        &::after {
+          clip-path: var(--clip-path-clicked);
+        }
+        > span {
+          &::after {
+            clip-path: var(--clip-path-clicked);
+          }
+        }
+      }
+    }
+  }
+}
+
+//Design by Son Tung Developer

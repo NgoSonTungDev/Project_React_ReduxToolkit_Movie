@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 75px;
+    width: 100%;
+    background-color: #11101D;
+    // background-color: rgb(32, 32, 32);
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    position: fixed;
+    z-index: 50;
+    overflow: hidden;
+    a {
+        color: transparent;
+        text-decoration: none;
+        
+      }
+
+    .logo-container {
+        width: 100px;
+        height: 75px;
+        padding: 0 10px;
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin: 13px 14px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+
+    .options {
+        line-height: 75px;
+        
+        
+        ul{
+            display: flex;
+            li{
+                padding: 3px 15px;
+                text-decoration: none;
+                list-style: none;
+                color: #fff;
+            }
+
+            li:hover{
+                cursor: pointer;
+                color: #1B9CFC;
+            }
+        }
+        
+        .option {
+            text-decoration: none;
+            color: #ccc;
+            padding-left: 40px;
+        }   
+    }
+
+    .search {
+        margin: 14px;
+        position: relative;       
+        width: 350px;
+        height: 30px;
+        margin: 21px  0;
+        background-color: white;
+        border-radius: 20px;
+        cursor: pointer;
+
+       .input-search {
+           padding: 8px 20px;
+           border-radius: 20px;
+           border: none;
+           width: 350px;
+           font-weight: 700;
+       }
+
+       i {
+           color: #000;
+           font-size: 30px;
+           position: absolute;
+           top: 3px;
+           right: 4px;
+       }
+
+    }
+
+    .login-navbar {
+        line-height: 75px;
+        margin-right: 50px;
+
+        p {
+            text-decoration: none;
+            color: #fff;
+        } 
+
+        p:hover {
+            cursor: pointer;
+            color: #1B9CFC;
+        }
+    }  
+}
+
+//Design by Son Tung Developer

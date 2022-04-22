@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+.container-User {
+  width: 100%;
+  height: 100vh;
+  background: url(https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1255&q=80);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.form_user {
+  transform: translateY(120px);
+  height: 470px;
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  overflow: hidden;
+  text-align: center !important;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+  background: rgb(123, 0, 224);
+  background: linear-gradient(
+    51deg,
+    rgba(123, 0, 224, 1) 0%,
+    rgba(84, 160, 255, 1) 47%,
+    rgba(9, 132, 227, 1) 100%
+  );
+}
+
+.form_user .wrapper img {
+  position: relative;
+  z-index: 20;
+  border-radius: 50%;
+  display: block;
+  height: 200px;
+  width: 200px;
+  border: 5px solid #fff;
+  object-fit: cover;
+  margin: 20px auto;
+  transition: all 0.3s ease;
+}
+
+.form_user:hover .wrapper img.active {
+  height: 470px;
+  width: 350px;
+  margin: 0px auto;
+  border: none;
+  border-radius: 5px;
+}
+.wrapper .title-user {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 10px;
+  line-height: 25px;
+}
+.wrapper .place {
+  width: 100%;
+  color: #fff;
+  font-size: 14.5px;
+  line-height: 0px;
+  margin: 10px 0;
+}
+.content-user {
+  color: #fff;
+  font-size: 17px;
+  margin-top: 10px !important;
+  padding: 1px 20px 10px 20px !important;
+}
+.content-user .buttons-user {
+  align-items: center;
+  display: flex;
+}
+.buttons-user .btn-user {
+  height: 40px;
+  width: 150px;
+}
+
+.form_user .icons-user {
+  position: relative;
+  margin-top: -420px;
+  margin-left: 10px;
+  list-style: none;
+}
+.form_user .icons-user.active {
+  display: none;
+}
+.form_user .icons-user li {
+  height: 40px;
+  width: 40px;
+  margin: 15px 0;
+  opacity: 0;
+  margin-left: -100px;
+  transition: all 0.5s ease;
+}
+.form_user:hover .icons-user li {
+  opacity: 1;
+  margin-left: 7px;
+}
+.form_user:hover .icons-user li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.form_user:hover .icons-user li:nth-child(3) {
+  transition-delay: 0.4s;
+}
+.form_user .icons-user li a {
+  color: #7b00e0;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  background: #fff;
+  display: block;
+  line-height: 40px;
+  transition: all 0.3s;
+}
+.form_user .icons-user li a:hover {
+  transform: scale(0.9);
+}
+
+.form_user:hover .icons-user li:nth-child(3) a:hover {
+  color: #fff;
+  background: rgb(249, 237, 50);
+  background: linear-gradient(
+    50deg,
+    rgba(249, 237, 50, 1) 0%,
+    rgba(238, 42, 123, 1) 49%,
+    rgba(0, 42, 255, 1) 100%
+  );
+}
+
+.form_user:hover .icons-user li:nth-child(2) a:hover {
+  color: #fff;
+  background: #00acee;
+}
+
+.form_user:hover .icons-user li:nth-child(1) a:hover {
+  color: #fff;
+  background: rgb(21, 166, 252);
+  background: linear-gradient(
+    90deg,
+    rgba(21, 166, 252, 1) 0%,
+    rgba(2, 105, 227, 1) 100%
+  );
+}
+
+
+// h1 {
+//   position: relative;
+//   text-align: center;
+//   color: #353535;
+//   font-size: 50px;
+//   font-family: "Cormorant Garamond", serif;
+// }
+
+// p {
+//   font-family: 'Lato', sans-serif;
+//   font-weight: 300;
+//   text-align: center;
+//   font-size: 18px;
+//   color: #676767;
+// }
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+
+/* 5 */
+.btn-5 {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: rgb(255,27,0);
+background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+}
+.btn-5:hover {
+  color: #f0094a;
+  background: #fff;
+   box-shadow:none;
+}
+.btn-5:before,
+.btn-5:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #f0094a91;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.btn-5:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+.btn-user button {
+  margin: 20px;
+}
+
+
+// .buttons-user .btn-user button {
+//   height: 100%;
+//   width: 100%;
+//   background: #fff;
+//   border: none;
+//   outline: none;
+//   cursor: pointer;
+//   font-size: 17px;
+//   font-weight: 500;
+//   border-radius: 5px;
+//   transition: all 0.3s;
+// }
+
+//Design by Son Tung Developer

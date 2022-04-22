@@ -1,0 +1,281 @@
+.container_detail {
+  width: 100%;
+  background-color: #333333;
+  padding-bottom: 50px;
+
+  .top_detail {
+    width: 100%;
+    height: 100vh;
+    // background: url("https://scontent.xx.fbcdn.net/v/t1.15752-9/278085593_540695997408508_8108029854148814703_n.png?stp=dst-png_p206x206&_nc_cat=100&ccb=1-5&_nc_sid=aee45a&_nc_ohc=jaeezDULhTIAX8Nob7B&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVK52bRTuCnX6KBqh-GAXvHvDQrAXk6bJIaCNBAqM4acOQ&oe=627CF252");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    // position: relative;
+
+    .top_detail_img {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+
+      img {
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+
+    .top_detail_content {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(90deg,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0.9363095580028886) 35%,
+          rgba(0, 0, 0, 0) 100%);
+
+      .demo_name_text {
+        position: absolute;
+        width: 255px;
+        height: 93px;
+        top: 110px;
+        left: 50px;
+        border-left: 5px solid #e50914;
+        background: transparent linear-gradient(270deg,
+            rgba(11, 1, 2, 0) 0%,
+            rgba(255, 55, 65, 0.3) 100%);
+        display: grid;
+        place-items: center;
+
+        p {
+          color: #e50914;
+          font-family: Playfair Display;
+          font-size: 30px;
+          text-transform: uppercase;
+          text-overflow: ellipsis;
+          margin-left: 10px !important;
+        }
+      }
+
+      .detail_content_itro {
+        position: absolute;
+        width: 50%;
+        height: 500px;
+        top: 200px;
+        left: 50px;
+
+        .detail_content_itro_name {
+          width: 130%;
+          height: 180px;
+
+          p {
+            color: #fff;
+            font-family: Playfair Display;
+            font-size: 60px;
+            font-weight: 500;
+            line-height: 90px;
+            margin: 25px 0px 0px;
+            text-align: left;
+            text-transform: uppercase;
+            // mix-blend-mode: multiply;
+            text-overflow: ellipsis;
+          }
+        }
+
+        .detail_content_itro_icon {
+          display: flex;
+          align-items: center;
+
+          .detail_content_itro_star {
+            display: flex;
+            align-items: center;
+
+            i {
+              color: #ff9b50;
+              font-size: 17px;
+            }
+
+            p {
+              margin-left: 5px;
+              color: #fff;
+            }
+          }
+
+          .detail_age {
+            margin-left: 15px;
+            background-color: #e50914;
+            display: grid;
+            place-items: center;
+            border-radius: 5px;
+
+            p {
+              color: #fff;
+              padding: 3px 8px;
+              font-weight: 600;
+            }
+          }
+
+          .detail_time {
+            p {
+              color: #fff;
+              margin-left: 15px;
+            }
+          }
+        }
+
+        .detail_lorem {
+          width: 75%;
+          margin: 30px 0;
+
+          p {
+            color: #d1d0cf;
+            font-family: Roboto;
+            line-height: 24px;
+          }
+        }
+      }
+
+      .Starring_Genres_Tag {
+        width: 100%;
+        height: 50px;
+        color: #fff;
+
+        .color_text {
+          color: #e50914;
+          font-size: 18px;
+          font-weight: 800;
+          line-height: 27px;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .body_detail_content {
+    margin-top: 10px;
+    width: 80%;
+    margin-left: 10%;
+
+    .text_demo_movie {
+      margin-top: 20px;
+      width: 180px;
+      border-left: 5px solid #e50914;
+      font-size: 20px;
+      background: transparent linear-gradient(270deg,
+          rgba(11, 1, 2, 0) 0%,
+          rgba(247, 24, 35, 0.3) 100%);
+
+      p {
+        color: #d1d0cf;
+        margin-left: 8px;
+        font-weight: bold;
+      }
+    }
+
+    .text_demo_movie2{
+      margin-top: 20px;
+      width: 80%;
+      border-left: 5px solid #e50914;
+      font-size: 20px;
+      background: transparent linear-gradient(270deg,
+          rgba(11, 1, 2, 0) 0%,
+          rgba(247, 24, 35, 0.3) 100%);
+
+      p {
+        color: #d1d0cf;
+        margin-left: 8px;
+        font-weight: bold;
+      }
+    }
+
+    .describe_detail {
+      margin-top: 18px;
+      width: 100%;
+      height: 486px;
+      display: flex;
+      justify-content: space-between;
+
+      .describe_detail_image {
+        margin-left: 100px;
+        width: 40%;
+        height: 486px;
+        overflow: hidden;
+        img {
+          width: 70%;
+          margin: auto;
+          object-fit: fill;
+        }
+      }
+
+      .describe_detail_text {
+        width: 50%;
+        height: 486px;
+
+        h2 {
+          text-align: center;
+          color: #0984e3;
+        }
+
+        p {
+          margin-top: 15px;
+          color: #fff;
+          line-height: 24px;
+          font-size: 15px;
+        }
+      }
+
+      .describe_detail_button {
+        width: 100%;
+        display: flex;
+        margin-top: 20px;
+        height: 50px;
+        margin-left: -10px;
+
+        & button{
+          cursor: pointer;
+          background-color: #bf000a;
+          border-style: solid;
+          border-width: 1px;
+          color: #ffffff;
+          border: none;
+          outline: none;
+          display: flex;
+          justify-content: center;
+          font-family: Roboto;
+          padding: 7px 25px;
+          align-items: center;
+          text-align: center;
+          text-transform: uppercase;
+          text-decoration: none;
+          margin-left: 50px;
+          i {
+            font-size: 25px;
+            transform: translateX(-10px);
+          }
+          a{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            color: #fff;
+            text-decoration: none;
+          }
+
+        }
+      }
+    }
+    .video_trailer_detail{
+      width: 100%;
+      margin-top: 20px;
+      video{
+        width: 100%;
+      }
+    }
+    .comment_detail{
+      width: 100%;
+    }
+  }
+}
+
+//Design by Son Tung Developer

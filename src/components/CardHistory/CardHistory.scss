@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.movie-card-history {
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+  height: 500px;
+  border-radius: 6px;
+  margin: 20px;
+}
+
+.image-card-history {
+  // background: url('http://static1.squarespace.com/static/530b728de4b04fc9b23a5988/t/569880381a5203aa7d44c1a8/1452834873397/00.jpg?format=1000w') no-repeat 75%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.4;
+  height: 500px;
+  width: 300px;
+}
+
+.image-card-history:after {
+  height: 100px;
+  content: '';
+  top: 200px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  // background: linear-gradient(rgba(9, 2, 4, 0), #444);
+}
+
+.movie-card-history .wave {
+  position: absolute;
+  height: 750px;
+  width: 750px;
+  opacity: 0.6;
+  left: 0;
+  top: 0;
+  margin-left: -70%;
+  margin-top: -130%;
+  background: radial-gradient(#353535, #383737);
+}
+
+.movie-card-history .wave:nth-child(2),
+.movie-card-history .wave:nth-child(3) {
+  top: 10px;
+}
+
+.movie-card-history .wave {
+  border-radius: 40%;
+  animation: wave 3000ms infinite linear;
+}
+
+/* when stop */
+.movie-card-history .wave {
+  border-radius: 40%;
+  animation: wave 55s infinite linear;
+}
+
+.movie-card-history .wave:nth-child(2) {
+  animation-duration: 4000ms;
+}
+
+/* when stop */
+.movie-card-history .wave:nth-child(2) {
+  animation-duration: 50s;
+}
+
+.movie-card-history .wave:nth-child(3) {
+  animation-duration: 5000ms;
+}
+
+/* when stop */
+.movie-card-history .wave:nth-child(3) {
+  animation-duration: 45s;
+}
+
+.info-card-history {
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.movie-card-history .title {
+  font-size: 1.4em;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 8px;
+  mix-blend-mode: multiply;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+}
+
+.movie-card-history .artist {
+  color: #000;
+  font-size: 1.2em;
+  letter-spacing: 0.08em;
+  font-family: 'Lato', sans-serif;
+  margin-top: -10px;
+}
+
+.removeCard {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  border-radius: 50%;
+  z-index: 5;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+
+  i {
+    font-size: 25px;
+    cursor: pointer;
+
+    &:hover {
+      color: #d63031;
+    }
+  }
+}
+
+//Design by Son Tung Developer

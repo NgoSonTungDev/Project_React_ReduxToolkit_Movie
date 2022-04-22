@@ -1,0 +1,56 @@
+.card_watch {
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+    margin: 25px;
+    width: 250px;
+    height: 400px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 8px;
+
+    &:hover img{
+        transition: 0.2s linear;
+        transform: scale(1.2);
+    }
+
+    &:hover .card_watch_content{
+        bottom: 0;
+        transition: 0.5s ;
+    }
+
+    .card_watch_image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.2s linear; 
+        }
+    }
+
+    .card_watch_content {
+        position: absolute;
+        bottom: -100%;
+        width: 100%;
+        height: 100%;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(to top, rgba(255, 255, 255, 1) 17%, rgba(255, 255, 255, 0.47692580450148814) 45%, rgba(255, 255, 255, 0) 99%);
+        transition: 1s ;
+        p {
+            position: absolute;
+            left: 15px;
+            bottom: 10px;
+            font-size: 20px !important;
+            font-weight: bold !important;
+            color: #000 !important;
+        }
+    }
+
+}
+
+//Design by Son Tung Developer

@@ -1,0 +1,149 @@
+.login-container {
+  background-color: aqua;
+  width: 100%;
+  height: 719px;
+  background: linear-gradient(120deg, #3ca7ee, #9b408f);
+  position: relative;
+
+  .login-page {
+    width: 25%;
+    height: 550px;
+    position: absolute;
+    background-color: #fff;
+    top: 125px;
+    left: 38%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+
+    .login-form {
+      padding: 0 50px;
+      width: 300px;
+
+      & label {
+        margin-left: 0px;
+      }
+
+      .input-login {
+        margin-top: 2px;
+        padding: 10px;
+        margin-bottom: 15px;
+        width: 280px;
+        border-top: 1px;
+        border-left: 1px;
+        border-right: 1px;
+        outline: none;
+      }
+
+      .forget {
+        cursor: pointer;
+        width: 280px;
+        padding-left: 155px;
+        padding-bottom: 20px;
+        font-size: 10px;
+        animation: forgot infinite 3s linear;
+        // &:hover {
+        //   cursor: pointer;
+        //   color: #0984e3;
+        // }
+      }
+
+      @keyframes forgot {
+        0% {
+          color: #000;
+        }
+
+        100% {
+          color: #0984e3;
+        }
+      }
+
+      .btn-login {
+        width: 280px;
+        padding: 8px;
+        border-radius: 30px;
+        background: #0984e3;
+        cursor: pointer;
+        border: 1px solid #000;
+
+        &:hover {
+          background-color: #3498db;
+        }
+      }
+
+      .login-social {
+        margin-top: 40px;
+        width: 280px;
+        text-align: center;
+
+        p {
+          margin-bottom: 10px;
+        }
+
+        i {
+          margin: 5px 5px;
+          font-size: 30px;
+          cursor: pointer;
+        }
+
+        .social-share {
+          display: flex;
+          justify-content: center;
+        }
+
+        .social-item {
+          margin-left: 5px;
+          width: 3rem;
+          height: 3rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          cursor: pointer;
+        }
+
+        .social-item--facebook {
+          background: rgb(21, 166, 252);
+          background: linear-gradient(90deg,
+              rgba(21, 166, 252, 1) 0%,
+              rgba(2, 105, 227, 1) 100%);
+        }
+
+        .social-item--twitter {
+          color: #fff;
+          background: #00acee;
+        }
+
+        .social-item--intagram {
+          color: #fff;
+          background: rgb(249, 237, 50);
+          background: linear-gradient(50deg,
+              rgba(249, 237, 50, 1) 0%,
+              rgba(238, 42, 123, 1) 49%,
+              rgba(0, 42, 255, 1) 100%);
+        }
+
+        .social-item--github {
+          color: #fff;
+          background-color: #000;
+        }
+      }
+
+      .sign-up {
+        margin-top: 30px;
+        width: 280px;
+        text-align: center;
+
+        a {
+          text-decoration: none;
+
+          &:hover {
+            cursor: pointer;
+            color: #0984e3;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Design by Son Tung Developer

@@ -1,0 +1,73 @@
+.card_favorite {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    cursor: pointer;
+
+    &:hover .icon_favorite_card{
+        right: -50px;
+        transition: 0.5s linear;
+    }
+
+    .card_favorite_img {
+        width: 100%;
+        height: 445px;
+        position: absolute;
+        z-index: 2;
+
+        & img {
+            width: 100%;
+            height: 445px;
+        }
+    }
+
+    .card_favorite_name {
+        width: 100%;
+        height: 55px;
+        position: absolute;
+        bottom: 0;
+        overflow: hidden;
+
+        p {
+            margin-top: 5px;
+            color: #000;
+            font-weight: 600;
+            font-size: 15px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+    }
+
+    .icon_favorite_card{
+        position: absolute;
+        right: 0px;
+        width: 50px;
+        height: 100px;
+        background-color: #31353d;
+        transition: 0.5s linear;
+
+        .favorite_card_iconsupport{
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{
+                color: #fff;
+                font-size: 20px;
+                &:hover{
+                    color: #0984e3;
+                }
+            }
+
+        }
+
+        .favorite_card_iconsupport:nth-child(1){
+            border-bottom: 1px solid #fff;
+        }
+    }
+}
+
+//Design by Son Tung Developer

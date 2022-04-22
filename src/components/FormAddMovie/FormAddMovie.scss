@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+
+.form_add_input {
+  width: 700px;
+  height: 500px;
+  background-color: #323a46;
+
+  h4 {
+    transform: translateY(20px);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  p {
+    color: #fff;
+    text-align: center;
+    transform: translateY(25px);
+  }
+
+  .table_input {
+    width: 80%;
+    overflow: hidden;
+    margin-left: 10%;
+    color: #fff;
+    text-align: center;
+
+    table {
+      width: 100%;
+      margin-top: 15px;
+
+      & tr th:nth-child(1) {
+        width: 50%;
+        overflow: hidden;
+      }
+
+      select {
+        width: 80%;
+        margin-top: 18px;
+        margin-left: -17px;
+        font-family: inherit;
+        border: 0;
+        border-bottom: 2px solid #9b9b9b;
+        outline: 0;
+        color: #9b9b9b;
+        font-size: 1.2rem;
+        padding: 5px 0;
+        background: transparent;
+      }
+    }
+  }
+}
+
+$primary: #11998e;
+$secondary: #38ef7d;
+$white: #fff;
+$gray: #9b9b9b;
+
+.form__group {
+  position: relative;
+  padding: 10px 0 0;
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 80%;
+  overflow: hidden;
+}
+
+.form__field {
+  font-family: inherit;
+  overflow: hidden;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid $gray;
+  outline: 0;
+  font-size: 1rem;
+  color: $white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown~.form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: $gray;
+}
+
+.form__field:focus {
+  ~.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $primary;
+    font-weight: 700;
+  }
+
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, $primary, $secondary);
+  border-image-slice: 1;
+}
+
+.form__field {
+
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+
+@mixin button($bcolor, $url, $x1, $y1, $bor, $col) {
+  background: $bcolor;
+  -webkit-mask: url($url);
+  mask: url($url);
+  -webkit-mask-size: $x1 $y1;
+  mask-size: $x1 $y1;
+  border: $bor;
+  color: $col;
+}
+
+.button-container-1 {
+  position: relative;
+  width: 80%;
+  height: 50px;
+  transform: translateY(-10px);
+  float: left;
+  margin-left: 20px;
+  background-color: #fff;
+  margin-top: 6vh;
+  overflow: hidden;
+  border: 1px solid;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 8px;
+
+  button {
+    width: 101%;
+    height: 100%;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    @include button(#000,
+      "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png",
+      2300%,
+      100%,
+      none,
+      #fff);
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(22) forwards;
+    animation: ani2 0.7s steps(22) forwards;
+
+    &:hover {
+      -webkit-animation: ani 0.7s steps(22) forwards;
+      animation: ani 0.7s steps(22) forwards;
+    }
+  }
+}
+
+.mas {
+  position: absolute;
+  color: #000;
+  text-align: center;
+  width: 101%;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  position: absolute;
+  font-size: 11px;
+  margin-top: 17px;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+
+.form_addmovie {
+  display: flex;
+  width: 72%;
+  height: 500px;
+  transform: translateY(130px);
+  margin: 0px auto;
+
+  .Card-demo {
+    overflow: hidden;
+    width: 320px;
+    transition: 1s;
+    height: 0px;
+    background-color: #323a46;
+    margin-left: 80px;
+
+    .movie-item-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 5px;
+    }
+
+    .movie-item-content::before {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    }
+
+    .movie-item-title {
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 600;
+      position: relative;
+      text-transform: capitalize;
+      text-align: center;
+    }
+
+    .movies-infors-card {
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 15px 0;
+    }
+
+    .movies-infors {
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      flex-wrap: wrap;
+      // margin-top: calc(var(--space-top) / 1.5);
+      opacity: 0;
+    }
+
+    .movies-infor {
+      display: flex;
+      align-items: center;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .movies-infor~.movies-infor {
+      margin-left: 10px;
+    }
+
+    .movies-infor span {
+      margin-left: 6px;
+    }
+
+    .cardMoveMain_demo {
+      position: relative;
+      overflow: hidden;
+      width: 320px;
+      height: 500px;
+      border: 2px solid rgb(0, 0, 0);
+      border-radius: 3px;
+      cursor: pointer;
+      border: 5px solid #323a46;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+
+    .cardMoveMain_demo .img_demo img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .cardMoveMain_demo .title_demo {
+      height: 22%;
+      width: 100%;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 700;
+      color: #fff;
+      transition: all 0.5 ease 1.4s;
+      position: absolute;
+      bottom: -100%;
+      left: 0;
+      box-shadow: 0 -95px 28px -25px #000 inset;
+    }
+
+    .cardMoveMain_demo .title_demo p {
+      margin-top: 50px;
+      font-family: "Roboto Mono", monospace;
+    }
+
+    .cardMoveMain_demo .catagory_demo {
+      position: absolute;
+      left: 10px;
+      top: 140px;
+      padding: 3px 10px;
+      font-size: 15px;
+      font-weight: 700;
+      text-align: center;
+      background: #2a264f;
+      color: #fff;
+      border-radius: 5px;
+      transform: translate(-160px, 0);
+      transition: all 0.5s ease;
+    }
+
+    .cardMoveMain_demo .text_demo {
+      background: rgb(0, 0, 0, 0.8);
+      width: 90%;
+      position: absolute;
+      margin: 0 5%;
+      bottom: 110px;
+      height: auto;
+      padding: 15px 10px;
+      text-align: center;
+      font-size: 17px;
+      color: #fff;
+      font-weight: 600;
+      transform: translate(-120%, 0);
+      font-family: "Oswald", sans-serif;
+      transition: all 0.5s ease 1s;
+    }
+
+    .cardMoveMain_demo .views_demo {
+      position: absolute;
+      left: 10px;
+      top: 175px;
+      padding: 3px 10px;
+      font-size: 15px;
+      font-weight: 700;
+      background: #e74c3c;
+      text-align: center;
+      color: #fff;
+      border-radius: 5px;
+      transform: translate(-160px, 0);
+      transition: all 0.5s ease 0.5s;
+    }
+
+  }
+}
+
+//Design by Son Tung Developer
