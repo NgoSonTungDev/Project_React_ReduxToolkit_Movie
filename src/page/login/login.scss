@@ -36,9 +36,8 @@
 
       .forget {
         cursor: pointer;
-        width: 280px;
-        padding-left: 155px;
-        padding-bottom: 20px;
+        float: right;
+        margin-right: -80px;
         font-size: 10px;
         animation: forgot infinite 3s linear;
         // &:hover {
@@ -58,13 +57,13 @@
       }
 
       .btn-login {
+        margin-top: 40px;
         width: 280px;
         padding: 8px;
         border-radius: 30px;
         background: #0984e3;
         cursor: pointer;
-        border: 1px solid #000;
-
+        border: none;
         &:hover {
           background-color: #3498db;
         }
@@ -103,9 +102,11 @@
 
         .social-item--facebook {
           background: rgb(21, 166, 252);
-          background: linear-gradient(90deg,
-              rgba(21, 166, 252, 1) 0%,
-              rgba(2, 105, 227, 1) 100%);
+          background: linear-gradient(
+            90deg,
+            rgba(21, 166, 252, 1) 0%,
+            rgba(2, 105, 227, 1) 100%
+          );
         }
 
         .social-item--twitter {
@@ -116,10 +117,12 @@
         .social-item--intagram {
           color: #fff;
           background: rgb(249, 237, 50);
-          background: linear-gradient(50deg,
-              rgba(249, 237, 50, 1) 0%,
-              rgba(238, 42, 123, 1) 49%,
-              rgba(0, 42, 255, 1) 100%);
+          background: linear-gradient(
+            50deg,
+            rgba(249, 237, 50, 1) 0%,
+            rgba(238, 42, 123, 1) 49%,
+            rgba(0, 42, 255, 1) 100%
+          );
         }
 
         .social-item--github {

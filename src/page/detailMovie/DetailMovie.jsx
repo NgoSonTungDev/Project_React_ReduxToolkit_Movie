@@ -22,8 +22,11 @@ const DetailMovie = () => {
   const history = useHistory();
   const id = location.pathname.split("movie/")[1];
 
+  var data3 = listdata.find(e=>e.id == id)
+
   useEffect(() => {
-    setData(listdata[parseInt(id) - 1]);
+    // setData(listdata[parseInt(id) - 1]);
+    setData(data3)
     window.scrollTo(0, 0);
   }, []);
 

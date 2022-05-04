@@ -83,6 +83,7 @@ const HomePage = () => {
         FillPhimLe={FillPhimLe}
       />
       <div className="container_HomePage">
+
         <div className="HomePageTop">
           <div className="HomePageTop_text">
             <div className="HomePageTop_text_intro">
@@ -113,6 +114,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+
         <div className="bodyHomePage">
           <br />
           <div className="bodyHome_text">

@@ -24,6 +24,7 @@ const Login = () => {
             type="text"
             className="input-login"
             placeholder="Type your usename"
+            required
           />
           <br />
           <label htmlFor="">Password</label>
@@ -32,6 +33,7 @@ const Login = () => {
             type="password"
             className="input-login"
             placeholder="Type your password"
+            required
           />
           <br />
           <p className="forget">Forgot passwork?</p>

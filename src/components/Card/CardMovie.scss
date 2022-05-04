@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
 .cardMoveMain {
   margin: 10px 35px;
   position: relative;
@@ -9,10 +9,11 @@
   border: 2px solid rgb(0, 0, 0);
   border-radius: 3px;
   cursor: pointer;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
-.cardMoveMain .img1 img{
+.cardMoveMain .img1 img {
   position: absolute;
   top: 0;
   left: 0;
@@ -36,9 +37,9 @@
   box-shadow: 0 -95px 35px -25px #000 inset;
 }
 
-.cardMoveMain .title p{
+.cardMoveMain .title p {
   margin-top: 50px;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 .cardMoveMain .catagory {
@@ -57,7 +58,7 @@
 }
 
 .cardMoveMain .text {
-  background: rgb(0, 0, 0,0.8);
+  background: rgb(0, 0, 0, 0.8);
   width: 90%;
   position: absolute;
   margin: 0 1.5%;
@@ -71,7 +72,7 @@
   transform: rotate(90deg);
   transform-origin: 0 100px;
   opacity: 0;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   transition: all 0.5s ease;
 }
 
@@ -90,7 +91,7 @@
   transition: all 0.5s ease 0.15s;
 }
 
-.cardMoveMain:hover .img1 img{
+.cardMoveMain:hover .img1 img {
   opacity: 0.8;
 }
 
@@ -105,7 +106,8 @@
 
 .cardMoveMain:hover .views,
 .cardMoveMain:hover .catagory {
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   transform: translate(0);
 }
 
@@ -150,7 +152,7 @@
   flex-wrap: wrap;
   margin-top: calc(var(--space-top) / 1.5);
   opacity: 0;
-  animation: top-down 1s .2s ease-in-out forwards;
+  animation: top-down 1s 0.2s ease-in-out forwards;
 }
 
 .movies-infor {
@@ -160,7 +162,7 @@
   font-weight: 600;
 }
 
-.movies-infor~.movies-infor {
+.movies-infor ~ .movies-infor {
   margin-left: 10px;
 }
 
@@ -168,5 +170,19 @@
   margin-left: 6px;
 }
 
-
-//Design by Son Tung Developer
+@media only screen and (max-width: 46.1785em) {
+  .cardMoveMain {
+    width: 100px;
+    height: 200px;
+    margin: 10px;
+    .movie-item-content {
+      width: 100%;
+      .movie-item-title {
+        font-size: 10px;
+      }
+    }
+    .movies-infors-card {
+      display: none;
+    }
+  }
+}

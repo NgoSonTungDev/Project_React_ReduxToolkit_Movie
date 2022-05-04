@@ -139,4 +139,3 @@ export const { addmoviesHistory, DataMovie, addcomment, cleanFullHistory ,remove
   movieSlice.actions;
 export default movieSlice.reducer;
 
-//Design by Son Tung Developer
