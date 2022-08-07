@@ -84,7 +84,7 @@ const datamovie = [
     name: "DORAEMON: NOBITA VÀ NHỮNG BẠN KHỦNG LONG MỚI",
     image:
       "https://s199.imacdn.com/ta/2020/08/16/ab658d841a45650a_1a3f9da00a862870_27859515975866458185710.jpg",
-    authour: "Chắt là Ozawa :)",
+    authour: "none",
     country: "Phim Nhật Bản",
     type: "Phim Khoa Học",
     release: 2021,

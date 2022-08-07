@@ -1,8 +1,3 @@
-# Mong được xin phép trước khi clone code 
-![imagefb](https://scontent.fdad3-4.fna.fbcdn.net/v/t1.15752-9/278145868_1919818421534873_5855301528816834116_n.png?_nc_cat=111&ccb=1-5&_nc_sid=ae9488&_nc_ohc=Eu1peJdKUqEAX_Qg6a5&_nc_ht=scontent.fdad3-4.fna&oh=03_AVIoI9GVUrelI1RDZmNWYnpcGbpmI9G-Fv4LzWbW_AcAkw&oe=628522FE)
-
-[linkfb](https://www.facebook.com/sontung0309/)
-
 ## Website Movie design by SonTung
 
 Được thực hiện trong 2 tuần
